@@ -8,10 +8,10 @@ public class Hijo extends Base {
     private String RH;
 
     public Hijo(String name, String age, String gender, String RH){
-        /*Es importante saber que cuando los atributos que se heredan estan privados se debe hacer uso de setters para poder modificar
-        su estado de lo contrario se usa el metodo super(atributo1, atrubuto2, etc) para cambiar sus valores.*/
-        setName(name);
-        setAge(age);
+        /*Para poder asignares valores a los atributos heredados es necesario usar el metodo super(), pasandole como parametro los atributos
+        a los que cambiaremos de valor. Es importante tener en cuenta que para poder usar super() debe estar creado un metodo constructor en
+        la clase base que inicialice los atributos */
+        super(name, age);
 
         this.gender = gender;
         this.RH = RH;
