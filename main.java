@@ -1,5 +1,6 @@
 import CreacionClases.*;
 import Ejemplos.*;
+import Herencia.*;
 
 public class main {
     public static void main(String[] args) {
@@ -14,6 +15,15 @@ public class main {
         Smartphone cel1 = new Smartphone("Black", "Android");
         cel1.makeCall();
         System.out.println(cel1.getBattery());
+
+        Car car1 = new Car("Mazda", "Black", 280);
+        car1.travel();
+
+        //2. Herencia
+        Hijo hijo1 = new Hijo("Sebastian", "18", "M", "A-");
+        hijo1.hello();
+        System.out.println(hijo1.getName());
+        System.out.println(hijo1.getAge());
     }
     
 }
