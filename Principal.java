@@ -2,7 +2,7 @@ import CreacionClases.*;
 import Ejemplos.*;
 import Herencia.*;
 
-public class main {
+public class Principal {
     public static void main(String[] args) {
         // 1. Creacion de Clases
         //Creacion de objeto -> Instancia de clase.
