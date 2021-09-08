@@ -3,6 +3,7 @@ import Ejemplos.*;
 import Herencia.*;
 import Interfaz.*;
 import Abstracta.*;
+import Sobrecarga.*;
 
 public class Principal {
     public static void main(String[] args) {
@@ -45,6 +46,12 @@ public class Principal {
         delfin.comer();
         delfin.dormir();
         delfin.moverse();
+
+        //5. Sobrecarga de metodos
+        Persona persona1 = new Persona("1234");
+        Persona persona2 = new Persona("Oscar", "18");
+        persona1.caminar();;
+        persona2.caminar("M");
     }
     
 }
