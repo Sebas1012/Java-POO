@@ -1,7 +1,5 @@
 package Ejemplos;
 
-import javax.management.RuntimeErrorException;
-
 public class Smartphone {
     private String color;
     private String os;

@@ -1,6 +1,8 @@
 import CreacionClases.*;
 import Ejemplos.*;
 import Herencia.*;
+import Interfaz.*;
+import Abstracta.*;
 
 public class Principal {
     public static void main(String[] args) {
@@ -24,6 +26,25 @@ public class Principal {
         hijo1.hello();
         System.out.println(hijo1.getName());
         System.out.println(hijo1.getAge());
+
+        //3. Interfaces
+        MySQL db1 = new MySQL();
+        SQLserver db2 = new SQLserver();
+
+        db1.conexion();
+        db1.insertar();
+        db2.conexion();
+        db2.insertar();
+
+        //4. Clases abstractas
+        Perro scott = new Perro();
+        scott.comer();
+        scott.dormir();
+        scott.moverse();
+        Pez delfin = new Pez();
+        delfin.comer();
+        delfin.dormir();
+        delfin.moverse();
     }
     
 }
